@@ -9,8 +9,9 @@
 			$(function(){
 				demo1();
 				demo2();
+				demo3();
 				function demo1(){
-					$("#abc");//按ID查找
+					var abc = $("#abc");//按ID查找
 				}
 				function demo2(){
 					$("#para-1");//选择JavaScript
@@ -19,7 +20,15 @@
 					$('[class^=color]');//选作所有编程语言
 					$("input[name=name]");//选择名字input
 					$("input[name=email],input[name=name]");//选择邮件和名字input
-				}	
+				}
+				// 分别选择所有语言，所有动态语言，所有静态语言，JavaScript，Lua，C等:
+				function demo3(){
+					$("ul.test-lang > li,ol.test-lang > li");//选择所有语言
+					$("ol.test-lang > li");//选择动态语言
+					$("ul.test-lang > li");//选择静态语言
+					$(".lang-javascript");//选择JavaScript语言
+					$(".lang-lua").hide();//选择JavaScript语言
+				}
 			})
 		</script>
 	</head>
@@ -45,6 +54,23 @@
 			            <p><button type="submit">注册</button></p>
 			        </fieldset>
 			    </form>
+			</div>
+			<!--
+            	作者：zhaoxue1688@126.com
+            	时间：2015-08-27
+            	描述：ul li
+            -->
+            <div class="test-selector">
+			    <ul class="test-lang">
+			        <li class="lang-javascript">JavaScript</li>
+			        <li class="lang-python">Python</li>
+			        <li class="lang-lua">Lua</li>
+			    </ul>
+			    <ol class="test-lang">
+			        <li class="lang-swift">Swift</li>
+			        <li class="lang-java">Java</li>
+			        <li class="lang-c">C</li>
+			    </ol>
 			</div>
 	</body>
 </html>
