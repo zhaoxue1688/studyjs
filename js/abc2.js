@@ -1,4 +1,4 @@
-/*魏如博众筹页*/
+/*众筹页##*/
 function the_raise(){
 		var _this = this;
 		//默认调用所有方法
