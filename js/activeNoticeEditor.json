@@ -1,0 +1,71 @@
+{
+    "resCode": 1,
+    "msg": "成功",
+    "activityNotice": {
+        "actId": 1,
+        "actName": "活动名称第一个",
+        "actTopUrl": "../../images/ad.jpg",
+        "actGoods": [
+            {
+                "good_name": "商品111",
+                "good_url": "../../images/shop1.jpg"
+            },
+            {
+                "good_name": "商品222",
+                "good_url": "../../images/shop1.jpg"
+            },
+            {
+                "good_name": "商品33333",
+                "good_url": "../../images/shop1.jpg"
+            },
+            {
+                "good_name": "商品44444",
+                "good_url": "../../images/shop1.jpg"
+            },
+            {
+                "good_name": "商品5555",
+                "good_url": "../../images/shop1.jpg"
+            },
+            {
+                "good_name": "商品6666",
+                "good_url": "../../images/shop1.jpg"
+            }
+        ],
+        "winningTitle":"中奖标题",
+        "winningList":[
+            {
+                "Per_name": "zhaoxue111",
+                "Per_telephone": "18701477535"
+            },
+            {
+                "Per_name": "zhaoxue222",
+                "Per_telephone": "18701477535"
+            },
+            {
+                "Per_name": "zhaoxue3333",
+                "Per_telephone": "18701477535"
+            },
+            {
+                "Per_name": "zhaoxue444",
+                "Per_telephone": "222218701477535"
+            },
+            {
+                "Per_name": "zhaoxue5555",
+                "Per_telephone": "0018701477535"
+            },
+            {
+                "Per_name": "zhaoxue3333",
+                "Per_telephone": "18701477535"
+            }
+        ],
+        "addTime":"2015-08-10 22:30:12",
+        "updateTime":"2015-08-10 22:30:12",
+        "storeId":423,
+        "mallId":68
+
+    }
+}
+
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>查找和过滤</title>
+		<script type="text/javascript"src="http://libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+		<script>
+			$(function(){
+				var find_base = function () {
+						var ul = $("ul.lang"); //获得<ul>
+						var huodei = ul.find('.dy');// 获得JavaScript, Python, Scheme
+						var js = ul.find('.js');//获得JavaScript
+						var Swift = ul.find('#swift').hide();//获得Swift
+						var Haskell = ul.find('[name="haskell"]').hide();//获得Haskell
+				};
+				var find_parent = function () {
+						var swift = $("#swift");//获得swift
+						var parent = swift.parent();//获得swift的上层节点
+						var a = swift.next();//获取swift上一个节点
+						var b = swift.next();//获取swift上一个节点
+						console.log(a);
+				};
+				find_base();
+				find_parent();
+			});
+		</script>
+	</head>
+	<body>
+		<!-- HTML结构 -->
+		<ul class="lang">
+		    <li class="js dy">JavaScript</li>
+		    <li class="dy">Python</li>
+		    <li id="swift">Swift</li>
+		    <li class="dy">Scheme</li>
+		    <li name="haskell">Haskell</li>
+		</ul>
+	</body>
+</html>
