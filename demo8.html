@@ -2,16 +2,17 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>jquery扩展</title>
+		<title>jquery扩展-高亮文本与改变字体大小</title>
 		<script type="text/javascript"src="http://libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery_extension.js" ></script>
 		<script>
 		'use strict';
 		$(function(){
-			$('#test-highlight1 span').hightlight2({
-			    backgroundColor: 'red',
-			    color: '#ffffff'
-			});
+			$.fn.highlight.defaults.fontsize = '28px';//重置字体大小
+			$.fn.highlight.defaults.backgroundColor = '#f2fae3';//重置字体背景色
+			$.fn.highlight.defaults.color = 'blue';//重置字体背景色
+			$('#test-highlight1 p:first-child span').highlight();
+			$('#test-highlight1 p:first-child').fontsize();
 		});
 		</script>
 	</head>
