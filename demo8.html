@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jquery扩展</title>
+		<script type="text/javascript"src="http://libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery_extension.js" ></script>
+		<script>
+		'use strict';
+		$(function(){
+			$('#test-highlight1 span').hightlight2({
+			    backgroundColor: 'red',
+			    color: '#ffffff'
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<!-- HTML结构 -->
+		<div id="test-highlight1">
+		    <p>什么是<span>jQuery</span></p>
+		    <p><span>jQuery</span>是目前最流行的<span>JavaScript</span>库。</p>
+		</div>
+	</body>
+</html>
